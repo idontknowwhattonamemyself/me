@@ -178,8 +178,5 @@ end)
 local d = w:CreateFolder("Misc")
 d:Button("No Kill Bricks",function()
     
-    Player = game:GetService("Players").LocalPlayer 
-
-
 game:GetService("Workspace").Map.KillBricks:remove()
 end)
