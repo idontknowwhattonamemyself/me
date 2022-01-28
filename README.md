@@ -175,3 +175,11 @@ end)
         loadstring(game:HttpGet("https://pastebin.com/raw/qZkK3ZXy", true))()
 
         end)
+local d = w:CreateFolder("Misc")
+c:Button("No Kill Bricks",function()
+    
+    Player = game:GetService("Players").LocalPlayer 
+
+
+game:GetService("Workspace").Map.KillBricks:remove()
+end)
