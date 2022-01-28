@@ -176,7 +176,7 @@ end)
 
         end)
 local d = w:CreateFolder("Misc")
-c:Button("No Kill Bricks",function()
+d:Button("No Kill Bricks",function()
     
     Player = game:GetService("Players").LocalPlayer 
 
