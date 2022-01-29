@@ -171,7 +171,7 @@ c:Button("No Fall Damage",function()
 game:GetService("Players").LocalPlayer.Character.FallDamage:remove()
 end)
 
-    c:Button("fly, Y = on/off J = fast",function()
+    c:Button("fly, U = on/off J = fast",function()
         loadstring(game:HttpGet("https://pastebin.com/raw/qZkK3ZXy", true))()
 
         end)
