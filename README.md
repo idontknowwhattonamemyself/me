@@ -206,6 +206,16 @@ e:Button("Therapist",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Therapist.ClickDetector)
 end)
 
+local f = w:CreateFolder("Class Npcs")
+f:Button("Akuma",function()
+fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Ethan.ClickDetector)
+end)
+f:Button("Oni",function()
+fireclickdetector(game:GetService("Workspace").NPCs.Trainers["Big Hoss"].ClickDetector)
+end)
+
+
+
 
 
 
