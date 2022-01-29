@@ -276,5 +276,6 @@ end)
 f:Button("Whisperer",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Rorschach.ClickDetector)
 end)
-
-
+f:Button("Abyss Walker",function()
+fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Enibras.ClickDetector)
+end)
