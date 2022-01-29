@@ -1,7 +1,7 @@
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local w = library:CreateWindow("RLT Gui") -- Creates the window
+local w = library:CreateWindow("Main") -- Creates the window
 
 local b = w:CreateFolder("Trinket Farm") -- Creates the folder(U will put here your buttons,etc)
 
@@ -183,7 +183,11 @@ end)
 d:Button("Player Esp", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/idontknowwhattonamemyself/esp/3732b716d791c7cd92c6aae59641f48990cde508/esp')))()
     end)
-local e = w:CreateFolder("Talk to misc Npcs")
+    
+    
+local f = library:CreateWindow("Talk To Npcs")   
+  
+local e = f:CreateFolder("Misc Npcs")
 e:Button("Dorgon",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Misc.Dorgon.ClickDetector)
 end)
@@ -206,7 +210,7 @@ e:Button("Therapist",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Therapist.ClickDetector)
 end)
 
-local f = w:CreateFolder("Class Npcs")
+local f = f:CreateFolder("Class Npcs")
 f:Button("Monk",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Isaac.ClickDetector)
 end)
@@ -247,9 +251,6 @@ fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Jagen.ClickDetector
 end)
 f:Button("Dark Sigil Knight",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Eldin.ClickDetector)
-end)
-f:Button("Illu",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Koris.ClickDetector)
 end)
 f:Button("Npc",function()
 fireclickdetector()
