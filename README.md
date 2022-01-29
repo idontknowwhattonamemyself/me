@@ -1,4 +1,4 @@
-
+-- funny script
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Main") -- Creates the window
