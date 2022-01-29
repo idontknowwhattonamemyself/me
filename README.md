@@ -398,7 +398,6 @@ game.Players.PlayerAdded:Connect(function(newplr) --Parameter gets the new playe
     end
     coroutine.wrap(ESP)()
 end)
-end)
 d:Button("No Kill Bricks",function()
     
 game:GetService("Workspace").Map.KillBricks:remove()
