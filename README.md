@@ -175,7 +175,9 @@ end)
 
         end)
 local d = w:CreateFolder("Misc")
-
+d:Button("Instant Reset", function()
+game:GetService("Workspace").Alive.immaldingandsoangry.Humanoid.Health = 0
+end)
 d:Button("No Kill Bricks",function()
     
 game:GetService("Workspace").Map.KillBricks:remove()
