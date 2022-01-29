@@ -170,6 +170,10 @@ c:Button("No Fall Damage",function()
     Player = game:GetService("Players").LocalPlayer 
 game:GetService("Players").LocalPlayer.Character.FallDamage:remove()
 end)
+c:Button("Temperature Lock",function()
+game:GetService("StarterGui").Main.AreaDetection.GetTemp:Remove()
+
+end)
 
     c:Button("fly, U = on/off J = fast",function()
         loadstring(game:HttpGet("https://pastebin.com/raw/qZkK3ZXy", true))()
