@@ -290,5 +290,3 @@ fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Rorschach.ClickDete
 end)
 
 
-
-
