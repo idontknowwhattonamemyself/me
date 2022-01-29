@@ -19,7 +19,7 @@ b:Button("esp Y = on U = off",function()
     end
     getgenv().ESPTOGGLE1 = true
     local ToggleKey = Enum.KeyCode.Y
-    local HideCommonToggleKey = Enum.KeyCode.U
+    local HideCommonToggleKey = Enum.KeyCode.H
     local Meshes = {
         ["rbxassetid://16657069"] = "Money Bag",
         ["rbxassetid://5204409890"] = "Scroll",
