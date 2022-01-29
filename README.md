@@ -8,7 +8,7 @@ local b = w:CreateFolder("Trinket Farm") -- Creates the folder(U will put here y
 
 
 
-b:Button("esp Y = on U = off",function()
+b:Button("esp Y = on H = off",function()
    game:GetService("Workspace").Gate.Lock:remove()
     for i,v in pairs(getconnections(game:GetService("ScriptContext").Error)) do 
         v:Disable()
@@ -171,7 +171,7 @@ c:Button("No Fall Damage",function()
 game:GetService("Players").LocalPlayer.Character.FallDamage:remove()
 end)
 
-    c:Button("fly, u = on/off j = fast",function()
+    c:Button("fly, Y = on/off J = fast",function()
         loadstring(game:HttpGet("https://pastebin.com/raw/qZkK3ZXy", true))()
 
         end)
