@@ -205,18 +205,7 @@ end)
 e:Button("Therapist",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Therapist.ClickDetector)
 end)
-e:Button("Mithril Sword",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons.MythrilSword.ClickDetector)
-end)
-e:Button("Mithril Dagger",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons.MythrilDagger.ClickDetector)
-end)
-e:Button("Mithril Spear",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons.MythrilSpear.ClickDetector)
-end)
-e:Button("rapier",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons["Mythril Rapier"].ClickDetector)
-end)
+
 
 
 
