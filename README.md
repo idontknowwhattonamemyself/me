@@ -160,7 +160,24 @@ end)
 loadstring(game:HttpGet("https://pastebin.com/raw/JarWyFnr", true))()
 end)
 
-    
+   b:Slider("Walkspeed",{
+    min = 32; -- min value of the slider
+    max = 84; -- max value of the slider
+    precise = true; -- max 2 decimals
+},function(value)
+while wait(0.1) do
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = (value)
+end
+end)
+   b:Slider("JumpPower",{
+    min = 32; -- min value of the slider
+    max = 84; -- max value of the slider
+    precise = true; -- max 2 decimals
+},function(value)
+while wait(0.1) do
+game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (value)
+end
+end)
     
 
 local c = w:CreateFolder("Player")
