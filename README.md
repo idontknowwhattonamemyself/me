@@ -176,7 +176,7 @@ end)
         end)
 local d = w:CreateFolder("Misc")
 d:Button("Instant Reset", function()
-game:GetService("Players").LocalPlayer.Humanoid.Health = 0
+game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 end)
 d:Button("No Kill Bricks",function()
     
