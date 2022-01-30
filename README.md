@@ -167,7 +167,7 @@ local c = w:CreateFolder("Player")
     max = 84; -- max value of the slider
     precise = true; -- max 2 decimals
 },function(value)
-while wait(0.1) do
+while wait(0.01) do
 game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = (value)
 end
 end)
@@ -176,7 +176,7 @@ end)
     max = 100; -- max value of the slider
     precise = true; -- max 2 decimals
 },function(value)
-while wait(0.1) do
+while wait(0.01) do
 game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (value)
 end
 end)
