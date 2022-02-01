@@ -1,4 +1,8 @@
--- funny script
+
+
+getgenv().Illucheck = false;
+
+
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
 local w = library:CreateWindow("Main") -- Creates the window
@@ -192,6 +196,24 @@ end)
 
         end)
 local d = w:CreateFolder("Misc")
+d:Toggle("Illu Alert",function(bool)
+    getgenv().Illucheck = bool
+    while Illucheck == true
+    do 
+        wait(1)
+    for i,v in pairs(game:GetService("Workspace").Alive:GetDescendants()) do
+    if v.Name == "Observe" and v.ClassName == "Tool" then do
+game.StarterGui:SetCore("SendNotification", {
+Title = "Illu Spectating"; -- the title (ofc)
+Text = "Yikes"; -- what the text says (ofc)
+Duration = .2; -- how long the notification should in secounds
+})
+print("Checking For Illu")
+end
+end
+end
+end
+end)
 d:Button("Instant Reset", function()
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 end)
