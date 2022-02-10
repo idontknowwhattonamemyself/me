@@ -1,4 +1,6 @@
-
+bluekickfalse = true
+while blurkickfalse == true do
+game:GetService("GuiService"):ClearError()
 
 getgenv().Illucheck = false;
 
