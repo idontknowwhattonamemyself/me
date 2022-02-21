@@ -219,6 +219,10 @@ end)
 d:Button("Instant Reset", function()
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 end)
+d:Button("Streamer Mode", function()
+game:GetService("Players").LocalPlayer.PlayerGui.StatGui.Container.CharacterName:Remove()
+game:GetService("Players").LocalPlayer.PlayerGui.LeaderboardGui:Remove()
+end)
 d:Button("No Kill Bricks",function()
     
 game:GetService("Workspace").Map.KillBricks:remove()
