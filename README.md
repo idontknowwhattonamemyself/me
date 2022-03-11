@@ -227,52 +227,11 @@ d:Button("No Kill Bricks",function()
     
 game:GetService("Workspace").Map.KillBricks:remove()
 end)
-d:Button("Mod Alert", function()
-while wait(.01) do
-game.Players.PlayerAdded:Connect(function(newPlayer)
-   if newPlayer:IsInGroup(11781014) then                    
-       local Bindable = Instance.new("BindableFunction")
-Bindable.OnInvoke = Callback
-
-game.StarterGui:SetCore("SendNotification", {
-Title = "MODERATOR DETECTED"; -- the title (ofc)
-Text = "Would you like to log?"; -- what the text says (ofc)
-Duration = 1; -- how long the notification should in secounds
-Button1 = "Log";
-Button2 = "Ignore";
-Game:GetService("Players").LocalPlayer:Kick("Anti-Moderator")
-Callback = Bindable
-})
-print("Found Collector") 
-   end
+d:Button("Collector Notifier", function()
+    loadstring:GameHttpGet("https://raw.githubusercontent.com/idontknowwhattonamemyself/me/Lua/collector%20notif")
 end)
 d:Button("Player Esp", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/idontknowwhattonamemyself/esp/3732b716d791c7cd92c6aae59641f48990cde508/esp')))()
-    end)
-    d:Button("Collector Notifier", function()
-    CollectorNotif = true
- while wait(.2)
-    do 
-        
-    if game:GetService("Workspace").NPCs.Misc.Collector.Torso.Transparency == 0 then
-function Callback(answer)
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-40.7098389, 252.080261, 7382.97754)
-end
-
-local Bindable = Instance.new("BindableFunction")
-Bindable.OnInvoke = Callback
-
-game.StarterGui:SetCore("SendNotification", {
-Title = "Collector here"; -- the title (ofc)
-Text = "woohooo"; -- what the text says (ofc)
-Duration = 1; -- how long the notification should in secounds
-Button1 = "I want It!";
-fireclickdetector(game:GetService("Workspace").NPCs.Misc.Collector.ClickDetector)
-Callback = Bindable
-})
-print("Found Collector")
-end
-end
     end)
     
     
