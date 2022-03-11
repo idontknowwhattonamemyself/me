@@ -227,10 +227,23 @@ d:Button("No Kill Bricks",function()
     
 game:GetService("Workspace").Map.KillBricks:remove()
 end)
-d:Button("Leave if Mod Joins", function()
+d:Button("Mod Alert", function()
+while wait(.01) do
 game.Players.PlayerAdded:Connect(function(newPlayer)
    if newPlayer:IsInGroup(11781014) then                    
-       Game:GetService("LocalPlayer"):Kick("Mod Detected")  
+       local Bindable = Instance.new("BindableFunction")
+Bindable.OnInvoke = Callback
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "MODERATOR DETECTED"; -- the title (ofc)
+Text = "Would you like to log?"; -- what the text says (ofc)
+Duration = 1; -- how long the notification should in secounds
+Button1 = "Log";
+Button2 = "Ignore";
+Game:GetService("Players").LocalPlayer:Kick("Anti-Moderator")
+Callback = Bindable
+})
+print("Found Collector") 
    end
 end)
 d:Button("Player Esp", function()
