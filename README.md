@@ -228,35 +228,10 @@ d:Button("No Kill Bricks",function()
 game:GetService("Workspace").Map.KillBricks:remove()
 end)
 d:Button("Leave if Mod Joins", function()
-local name1 = "II_Tomu" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game:GetService'Players'.LocalPlayer:Kick("Mod Joined")
-end
-end)
-
-local name2 = "LuzuliGames" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game:GetService'Players'.LocalPlayer:Kick("Mod Joined")
-end
-end)
-local name3 = "FizzledO" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game:GetService'Players'.LocalPlayer:Kick("Mod Joined")
-end
-end)
-local name3 = "LamarTheOni" --// Change "playerName" with the name of the person u want to check for that joins
-
-game:GetService'Players'.PlayerAdded:Connect(function(player)
-if player.Name == name then
-game:GetService'Players'.LocalPlayer:Kick("Mod Joined")
-end
-end)
+game.Players.PlayerAdded:Connect(function(newPlayer)
+   if newPlayer:IsInGroup(11781014) then                    
+       Game:GetService("LocalPlayer"):Kick("Mod Detected")  
+   end
 end)
 d:Button("Player Esp", function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/idontknowwhattonamemyself/esp/3732b716d791c7cd92c6aae59641f48990cde508/esp')))()
