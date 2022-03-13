@@ -193,14 +193,23 @@ c:Button("No Fall Damage",function()
 game:GetService("Players").LocalPlayer.Character.FallDamage.RemoteFunction:remove()
 end)
 c:Button("No Fire (WIP)", function()
-nofire = true
-while nofire == true do
-    wait(.5)
-local args = {
+while true do wait(0)
+local username = game:GetService("Players").LocalPlayer.Name
+	for _, v in pairs(game:GetService("Workspace").AliveData:GetDescendants()) do
+		if v.Name == username then
+		    do
+		        if v:FindFirstChild("Status"):FindFirstChild("Burn") then do
+		            			local args = {
     [1] = 0
 }
-
+print("test")
 game:GetService("Players").LocalPlayer.Character.CharacterHandler.ClientHandler.Dash:FireServer(unpack(args))
+
+		end
+		end
+end
+end
+end
 end
 end)
     c:Button("fly, U = on/off J = fast",function()
