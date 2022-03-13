@@ -192,7 +192,7 @@ c:Button("No Fall Damage",function()
     Player = game:GetService("Players").LocalPlayer 
 game:GetService("Players").LocalPlayer.Character.FallDamage.RemoteFunction:remove()
 end)
-c:Button("No Fire (WIP)", function()
+c:Button("No Fire", function()
 while true do wait(0)
 local username = game:GetService("Players").LocalPlayer.Name
 	for _, v in pairs(game:GetService("Workspace").AliveData:GetDescendants()) do
