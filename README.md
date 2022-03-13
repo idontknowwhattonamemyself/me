@@ -192,7 +192,17 @@ c:Button("No Fall Damage",function()
     Player = game:GetService("Players").LocalPlayer 
 game:GetService("Players").LocalPlayer.Character.FallDamage.RemoteFunction:remove()
 end)
+c:Button("No Fire (WIP)", function()
+nofire = true
+while nofire == true do
+    wait(.5)
+local args = {
+    [1] = 0
+}
 
+game:GetService("Players").LocalPlayer.Character.CharacterHandler.ClientHandler.Dash:FireServer(unpack(args))
+end
+end)
     c:Button("fly, U = on/off J = fast",function()
         loadstring(game:HttpGet("https://pastebin.com/raw/qZkK3ZXy", true))()
 
@@ -328,4 +338,7 @@ fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Drake.ClickDetector
 end)
 f:Button("Whisperer",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Trainers.Rorschach.ClickDetector)
+end)
+e:Button("Castle Rock",function()
+fireclickdetector(game:GetService("Workspace")["The Eagle"].ClickDetector)
 end)
