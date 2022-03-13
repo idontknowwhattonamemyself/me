@@ -202,7 +202,6 @@ local username = game:GetService("Players").LocalPlayer.Name
 		            			local args = {
     [1] = 0
 }
-print("test")
 game:GetService("Players").LocalPlayer.Character.CharacterHandler.ClientHandler.Dash:FireServer(unpack(args))
 
 		end
