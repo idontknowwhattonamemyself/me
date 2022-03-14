@@ -173,8 +173,9 @@ local c = w:CreateFolder("Player")
     max = 84; -- max value of the slider
     precise = true; -- max 2 decimals
 },function(value)
-while wait(0.01) do
-game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = (value)
+while true do
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value --Walkspeed of your choice
+wait()
 end
 end)
    c:Slider("JumpPower",{
