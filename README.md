@@ -189,9 +189,9 @@ end
 end)
 
 c:Button("No Fall Damage",function()
-    
- game:GetService("Players").LocalPlayer.Character.FallDamage.RemoteFunction.Script.Parent = game:GetService("Players").LocalPlayer.Character.FallDamage
-game:GetService("Players").LocalPlayer.Character.FallDamage.RemoteFunction:remove()
+game:GetService("Players").LocalPlayer.Character.FallDamage:FindFirstChild("RemoteFunction").Parent = Game:GetService("Workspace")
+game:GetService("Workspace").RemoteFunction:Destroy()
+print("Success")
 end)
 c:Button("No Fire", function()
 while true do wait(0)
