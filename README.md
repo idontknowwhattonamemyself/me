@@ -190,7 +190,7 @@ end)
 
 c:Button("No Fall Damage",function()
     
-    Player = game:GetService("Players").LocalPlayer 
+ game:GetService("Players").LocalPlayer.Character.FallDamage.RemoteFunction.Script.Parent = game:GetService("Players").LocalPlayer.Character.FallDamage
 game:GetService("Players").LocalPlayer.Character.FallDamage.RemoteFunction:remove()
 end)
 c:Button("No Fire", function()
