@@ -164,30 +164,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/JarWyFnr", true))()
 end)
 
 local c = w:CreateFolder("Player")
- c:Button("Noclip",function()
-     local noclip = true char = game.Players.LocalPlayer.Character while true do if noclip == true then for _,v in pairs(char:children()) do pcall(function() if v.className == "Part" then v.CanCollide = false elseif v.ClassName == "Model" then v.Head.CanCollide = false end end) end end game:service("RunService").Stepped:wait() end
-
-       end)
-   c:Slider("Walkspeed",{
-    min = 32; -- min value of the slider
-    max = 84; -- max value of the slider
-    precise = true; -- max 2 decimals
-},function(value)
-while true do
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value --Walkspeed of your choice
-wait()
-end
-end)
-   c:Slider("JumpPower",{
-    min = 32; -- min value of the slider
-    max = 100; -- max value of the slider
-    precise = true; -- max 2 decimals
-},function(value)
-while wait(0.01) do
-game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (value)
-end
-end)
-
+ 
 c:Button("No Fall Damage",function()
 game:GetService("Players").LocalPlayer.Character.FallDamage:FindFirstChild("RemoteFunction").Parent = Game:GetService("Workspace")
 game:GetService("Workspace").RemoteFunction:Destroy()
