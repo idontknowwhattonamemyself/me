@@ -167,6 +167,7 @@ local c = w:CreateFolder("Player")
  
 c:Button("No Fall Damage",function()
 game:GetService("Players").LocalPlayer.Character.FallDamage:FindFirstChild("RemoteFunction").Parent = Game:GetService("Workspace")
+wait(.1)
 game:GetService("Workspace").RemoteFunction:Destroy()
 print("Success")
 end)
