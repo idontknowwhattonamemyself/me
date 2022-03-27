@@ -343,6 +343,9 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/idontknowwhattonamem
 local f = library:CreateWindow("Talk To Npcs")   
   
 local e = f:CreateFolder("Misc Npcs")
+e:Button("Vamp food",function()
+fireclickdetector(game:GetService("Workspace").NPCs.Misc.Jartavious.ClickDetector)
+end)
 e:Button("Dorgon",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Misc.Dorgon.ClickDetector)
 end)
