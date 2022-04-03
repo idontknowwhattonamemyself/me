@@ -1,5 +1,10 @@
+CollectorNotif = true
+ while CollectorNotif == true
+    do 
+        wait(1)
+    if game:GetService("Workspace").NPCs.Misc.Collector.Torso.Transparency == 0 then
 function Callback(answer)
-fireclickdetector(game:GetService("Workspace").NPCs.Misc.Collector.ClickDetector)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-40.7098389, 252.080261, 7382.97754)
 end
 
 local Bindable = Instance.new("BindableFunction")
@@ -11,5 +16,7 @@ Text = "woohooo"; -- what the text says (ofc)
 Duration = 1; -- how long the notification should in secounds
 Button1 = "I want It!";
 Callback = Bindable
-
 })
+print("Found ")
+end
+end
