@@ -764,22 +764,6 @@ end)
 e:Button("Castle Rock",function()
 fireclickdetector(game:GetService("Workspace")["The Eagle"].ClickDetector)
 end)
-local z = library:CreateWindow("Weapon")   
-
-local r = z:CreateFolder("Weapons")
-
-r:Button("Sword",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons.MythrilSword.ClickDetector)
-end)
-r:Button("Dagger",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons.MythrilDagger.ClickDetector)
-end)
-r:Button("Caestus",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons.Caestus.ClickDetector)
-end)
-r:Button("Spear",function()
-fireclickdetector(game:GetService("Workspace").NPCs.Weapons.MythrilSpear.ClickDetector)
-end)
 
 local g = library:CreateWindow("Armors")
 
