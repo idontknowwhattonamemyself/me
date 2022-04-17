@@ -665,6 +665,9 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/idontknowwhattonamem
 local f = library:CreateWindow("Talk To Npcs")   
   
 local e = f:CreateFolder("Misc Npcs")
+e:Button("Witch",function()
+fireclickdetector(game:GetService("Workspace")["Witch Malady"].ClickDetector)
+end)
 e:Button("Vamp food",function()
 fireclickdetector(game:GetService("Workspace").NPCs.Misc.Jartavious.ClickDetector)
 end)
