@@ -231,16 +231,16 @@ end)
 d:Button("Instant Reset", function()
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 end)
-d:Button("Bag Autopickup", function()
-while true do wait()
-for _,v in pairs(game:GetService("Workspace").DroppedBags:GetDescendants()) do
+d:Button("Bag AutoPickUp", function()
+while wait() do
+    for _,v in pairs(game:GetService("Workspace").DroppedBags:GetDescendants()) do
 if v:IsA("TouchTransmitter") then
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 0) --0 is touch
 wait()
 firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, v.Parent, 1) -- 1 is untouch
 end
 end
-end
+    end
 end)
 d:Button("Full Bright", function()
 if not _G.FullBrightExecuted then
