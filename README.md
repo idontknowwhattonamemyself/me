@@ -233,6 +233,29 @@ end
 end
 end
 end)
+d:Button("Day Farm", function()
+local minimumDistance = 500
+coroutine.wrap(function()
+    while task.wait() do
+        for i,v in next,game.Players:GetPlayers()do
+            if v~=game.Players.LocalPlayer and v.Character then
+                local m=(v.Character.HumanoidRootPart.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude
+                if m<minimumDistance then
+                   game:GetService("Players").LocalPlayer:Kick()
+wait(2)
+game:GetService("GuiService"):ClearError()
+game:GetService("StarterGui"):SetCore("PromptBlockPlayer", game.Players:GetChildren()[2])
+wait(1) local blockpos = game:GetService("CoreGui").RobloxGui.PromptDialog.ContainerFrame.ConfirmButton.AbsolutePosition
+game:GetService('VirtualInputManager'):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, true,game, 0);
+task.wait(); game:GetService('VirtualInputManager'):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, false, game, 0); 
+while task.wait(4) do
+    game:GetService('TeleportService'):Teleport(8151458037) end;
+                end
+            end
+        end
+    end
+end)()
+end)
 d:Button("Instant Reset", function()
 game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 end)
