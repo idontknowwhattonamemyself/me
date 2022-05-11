@@ -233,6 +233,14 @@ end
 end
 end
 end)
+d:Button("Server Hop", function()
+game:GetService("StarterGui"):SetCore("PromptBlockPlayer", game.Players:GetChildren()[2])
+wait(1) local blockpos = game:GetService("CoreGui").RobloxGui.PromptDialog.ContainerFrame.ConfirmButton.AbsolutePosition
+game:GetService('VirtualInputManager'):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, true,game, 0);
+task.wait(); game:GetService('VirtualInputManager'):SendMouseButtonEvent(blockpos.X + 5, blockpos.Y + 40, 0, false, game, 0); 
+while task.wait(4) do
+    game:GetService('TeleportService'):Teleport(8151458037) end;
+end)
 d:Button("Day Farm", function()
 local minimumDistance = 500
 coroutine.wrap(function()
