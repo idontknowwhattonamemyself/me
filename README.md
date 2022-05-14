@@ -216,7 +216,7 @@ end)
 
 local Player = game:GetService('Players').LocalPlayer;
 local Camera = workspace.Camera;
-local Speed = 450;
+local Speed = 200;
 
 game:GetService'RunService'.RenderStepped:Connect(function()
     if (getgenv().Toggled == true and Player.Character and Player.Character:FindFirstChild('HumanoidRootPart')) then
