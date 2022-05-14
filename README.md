@@ -210,7 +210,7 @@ end
 end
 end
 end)
-C:Bind("Fly",Enum.KeyCode.Z,function() --Default bind
+c:Bind("Fly",Enum.KeyCode.Z,function() --Default bind
     getgenv().Toggled = not getgenv().Toggled;
     local Player = game:GetService('Players').LocalPlayer;
 local Camera = workspace.Camera;
