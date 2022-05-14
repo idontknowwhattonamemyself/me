@@ -210,11 +210,11 @@ end
 end
 end
 end)
-b:Bind("Bind",Enum.KeyCode.Z,function() --Default bind
+C:Bind("Fly",Enum.KeyCode.Z,function() --Default bind
     getgenv().Toggled = not getgenv().Toggled;
     local Player = game:GetService('Players').LocalPlayer;
 local Camera = workspace.Camera;
-local Speed = 250;
+local Speed = 200;
 
 game:GetService'RunService'.RenderStepped:Connect(function()
     if (getgenv().Toggled == true and Player.Character and Player.Character:FindFirstChild('HumanoidRootPart')) then
