@@ -210,11 +210,9 @@ end
 end
 end
 end)
-    c:Toggle("Fly",function(bool)
-    getgenv().Toggled = bool
-    
-
-local Player = game:GetService('Players').LocalPlayer;
+b:Bind("Bind",Enum.KeyCode.Z,function() --Default bind
+    getgenv().Toggled = not getgenv().Toggled;
+    local Player = game:GetService('Players').LocalPlayer;
 local Camera = workspace.Camera;
 local Speed = 250;
 
@@ -222,8 +220,9 @@ game:GetService'RunService'.RenderStepped:Connect(function()
     if (getgenv().Toggled == true and Player.Character and Player.Character:FindFirstChild('HumanoidRootPart')) then
         Player.Character.HumanoidRootPart.Velocity = Camera.CFrame.LookVector * Speed;
     end;
+    end)
 end)
-end)
+   
 
 local d = w:CreateFolder("Misc")
 d:Toggle("Illu Alert",function(bool)
