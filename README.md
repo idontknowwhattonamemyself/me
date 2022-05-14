@@ -1,4 +1,4 @@
-
+getgenv().Fly = false
 getgenv().Illucheck = false;
 
 
@@ -210,10 +210,17 @@ end
 end
 end
 end)
-    c:Button("fly, U = on/off J = fast",function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/qZkK3ZXy", true))()
+    c:Toggle("Toggle",function(bool)
+    getgenv().Fly = bool
+    
+local speed = 450
+while getgenv().Fly == true do wait()
+local lv = workspace.Camera.CFrame.LookVector
+local hrp = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Velocity = lv * speed
+end
+end)
 
-        end)
 local d = w:CreateFolder("Misc")
 d:Toggle("Illu Alert",function(bool)
     getgenv().Illucheck = bool
