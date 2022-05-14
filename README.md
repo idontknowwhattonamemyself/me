@@ -1,4 +1,4 @@
-getgenv().Fly = false
+getgenv().Toggled = false
 getgenv().Illucheck = false;
 
 
@@ -210,15 +210,19 @@ end
 end
 end
 end)
-    c:Toggle("Toggle",function(bool)
-    getgenv().Fly = bool
+    c:Toggle("Fly",function(bool)
+    getgenv().Toggled = bool
     
-local speed = 450
-while getgenv().Fly == true do wait()
-local lv = workspace.Camera.CFrame.LookVector
-local hrp = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Velocity = lv * speed
-end
+
+local Player = game:GetService('Players').LocalPlayer;
+local Camera = workspace.Camera;
+local Speed = 450;
+
+game:GetService'RunService'.RenderStepped:Connect(function()
+    if (getgenv().Toggled == true and Player.Character and Player.Character:FindFirstChild('HumanoidRootPart')) then
+        Player.Character.HumanoidRootPart.Velocity = Camera.CFrame.LookVector * Speed;
+    end;
+end)
 end)
 
 local d = w:CreateFolder("Misc")
