@@ -4,7 +4,7 @@ getgenv().Illucheck = false;
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
 
-local w = library:CreateWindow("Key Exploits is a W") -- Creates the window
+local w = library:CreateWindow("Key exploit's Channel is dead") -- Creates the window
 
 local b = w:CreateFolder("Trinket Farm") -- Creates the folder(U will put here your buttons,etc)
 
