@@ -6,7 +6,7 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Aika
 
 local w = library:CreateWindow("Key exploit's Channel is dead") -- Creates the window
 
-local b = w:CreateFolder("Trinket Farm") -- Creates the folder(U will put here your buttons,etc)
+local b = w:CreateFolder("Is ") -- Creates the folder(U will put here your buttons,etc)
 
 
 
@@ -163,7 +163,7 @@ end)
 loadstring(game:HttpGet("https://pastebin.com/raw/JarWyFnr", true))()
 end)
 
-local c = w:CreateFolder("Player")
+local c = w:CreateFolder("So")
  
 c:Button("No Fall Damage",function()
 game:GetService("Players").LocalPlayer.Character.FallDamage:FindFirstChild("RemoteFunction").Parent = Game:GetService("Workspace")
@@ -224,7 +224,7 @@ game:GetService'RunService'.RenderStepped:Connect(function()
 end)
    
 
-local d = w:CreateFolder("Misc")
+local d = w:CreateFolder("Dead")
 d:Toggle("Illu Alert",function(bool)
     getgenv().Illucheck = bool
     while Illucheck == true
