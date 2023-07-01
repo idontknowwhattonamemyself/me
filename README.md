@@ -4,9 +4,9 @@ getgenv().Illucheck = false;
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 
-local w = library:CreateWindow("Key exploit's Channel is dead") -- Creates the window
+local w = library:CreateWindow("shitscript v1") -- Creates the window
 
-local b = w:CreateFolder("Is ") -- Creates the folder(U will put here your buttons,etc)
+local b = w:CreateFolder("Main") -- Creates the folder(U will put here your buttons,etc)
 
 
 
