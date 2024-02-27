@@ -78,7 +78,6 @@ local Utility = {}
 --
 getgenv().Library = Library
 getgenv().Utility = Utility
-InputGui.Parent = game.CoreGui
 -----------------------------------------------------------------
 do
     Utility.AddInstance = function(NewInstance, Properties)
